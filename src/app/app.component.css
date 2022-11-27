@@ -1,0 +1,63 @@
+.main{
+    text-align: left;    
+    margin: 60px auto;
+    width: 350px;
+}
+.main h2{
+    margin-top: 40px;
+}
+.timeline-area{
+    margin: 0px auto;
+    width: 360px;
+    border-left: 2px solid #ccc;
+    padding: 0 20px 0 30px;
+}
+
+section div{
+    background-color: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    line-height: 1.7;
+    position: relative; 
+    height: 110px;
+    margin-bottom: 5px;
+}
+section div::before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 10px;
+    left: -40px; 
+}
+section div::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #ddd transparent transparent;
+    border-width: 8px;
+    position: absolute; 
+    left: -17px;
+    top: 10px;
+}
+section div h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+section div h3{
+    margin: 0;
+    font-family: poppins;
+}
+section div h4{
+    margin: 0;
+    font-family: poppins;
+}
+
+

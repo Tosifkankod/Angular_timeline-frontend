@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
+import { TimelineModule } from "primeng/timeline";
+import { CardModule } from "primeng/card";
+import { AppComponent } from "./app.component";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TimelineModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
